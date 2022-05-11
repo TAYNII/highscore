@@ -1,0 +1,16 @@
+<section>
+    <div>
+      <p class="search-text">
+        Hittade <%= games.length %> träffar på "<%= searchTerm %>"
+      </p>
+    </div>
+    <div>
+  
+      <% games.forEach(game => {  %>
+  
+        <%- include("shared/partials/game-card", { game }) %>
+  
+      <% }) %>
+  
+    </div>
+  </section>

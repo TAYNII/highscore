@@ -1,0 +1,27 @@
+<div class="game-container">
+  <img class="detail-img" src="<%= game.image_url %>" alt="" />
+  <div>
+    <h1>
+      <%= game.title %>
+    </h1>
+    <p><% const gameDate = new Date (game.release); %>
+      <%=gameDate.toLocaleDateString('se-SE'); %>, <%= game.genre %></p>
+    <p><%= game.description %></p>
+  </div>
+</div>
+<h1 class="detail-title">Highscores</h1>
+<% allScores.forEach(item => { %>
+
+
+<div>
+  <div class="score-text">
+    <div class="flex-container scores-border">
+      <div>
+        <h3><%= item.player %> <%= item.played_at%></h3>
+      </div>
+      <div>
+        <h3><%= item.highscore%></h3>
+      </div>
+    </div>
+  </div>
+  <% }) %>

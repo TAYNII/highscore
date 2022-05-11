@@ -1,0 +1,59 @@
+<h1>Nytt spel</h1>
+
+<form method="post">
+    <div>
+        <div>
+            <label for="title">Titel</label>
+            <input
+            type="text"
+            name="title"
+            id="title"
+          />
+        </div>
+      </div>
+    <div>
+        <div>
+            <div>
+                <label for="description">Beskrivning</label>
+                <textarea 
+                name="description" 
+                id="description" 
+                cols="30" 
+                >
+            </textarea>
+            </div>
+          </div>
+        <div>
+        <div>
+            <label for="image_url">Bild</label>
+          <input
+            type="text"
+            name="image_url"
+            id="image_url"
+          />
+        </div>
+      </div>
+      <div>
+        <div>
+            <label for="genre">Genre</label>
+          <select name="genre" id="genre">
+                <option class="puzzle">Puzzle</option>
+                <option class="arkade">Arkade</option>
+                <option class="maze">Maze</option>
+                <option class="platform">Platform</option>
+                <option class="mmorpg">MMORPG</option>
+          </select>
+        </div>
+      </div>
+      <div>
+          <div>
+              <label for="release">Lanseringsår</label>
+            <input
+              type="date"
+              name="release"
+              id="release"
+            />
+          </div>
+        </div>
+        <input type="submit" value="Lägg till"/>
+    </form>

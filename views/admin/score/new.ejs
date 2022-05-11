@@ -1,0 +1,35 @@
+<h1>Nytt highscore</h1>
+
+<form method="post">
+  <div>
+    <div>
+      <label for="game_id">Spel</label>
+      <select name="game_id" id="game_id">
+        <% games.forEach(game => { %>
+        <option value="<%= game.id %>"><%= game.title %></option>
+        <% }) %>
+      </select>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <label for="player">Spelare</label>
+        <input type="text" name="player" id="player" />
+      </div>
+    </div>
+    <div>
+      <div>
+        <label for="played_at">Datum</label>
+        <input type="date" name="played_at" id="played_at" />
+      </div>
+    </div>
+    <div>
+      <div>
+        <label for="highscore">Poäng</label>
+        <input type="number" name="highscore" id="highscore" />
+      </div>
+    </div>
+    <input type="submit" value="Lägg till"/>
+    </div>
+</form>

@@ -1,0 +1,13 @@
+
+  <div>
+    <h1 class="highscore"><%= title %></h1>
+  <div>
+      <% scores.forEach(score => {  %>
+    
+        <%- include("shared/partials/score-card", { score }) %>
+        
+  
+      <% }) %>
+
+  </div>
+  </div>

@@ -1,0 +1,15 @@
+<div class="search-container">
+  <a href="/games/<%= game.url_slug %>">
+    <div class="flex-container">
+      <div class="gametext-container">
+        <h1><%= game.title %></h1>
+        <p><%= game.genre %></p>
+        <p><% const scoreDate = new Date (game.release); %>
+          <%=scoreDate.toLocaleDateString('se-SE'); %></p>
+      </div>
+      <div>
+        <img class="detail-img2" src="<%= game.image_url %>" alt="" />
+      </div>
+    </div>
+  </a>
+</div>

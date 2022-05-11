@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+      <header>
+        <div>
+          <img
+                src="https://via.placeholder.com/280x120.png/FFFFFF/%20?text=Logo"
+                alt=""
+              />
+        </div>
+        <div>
+          <form action="/search">
+            <input
+              class="game-input"
+              type="search"
+              placeholder="Sök spel"
+              aria-label="Sök spel"
+              name="q"
+            />
+          </form>
+        </div>
+      </header>
+      <main>
+          <%- body %>
+      </main>
+      <footer >
+        &copy; Highscore
+      </footer>
+    </div>
+  </body>
+</html>

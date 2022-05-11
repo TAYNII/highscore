@@ -1,0 +1,178 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: lightgray;
+  padding: 50px;
+  text-align: center;
+}
+
+footer {
+  background-color: lightgray;
+  padding: 50px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+  background-color: black;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: thin solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid black;
+}
+
+input[type=text],[type=date], [type=number], textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4d4d4d;
+}
+
+.detail-img {
+  width: 320px;
+  height: 480px;
+  margin: 20px;
+}
+
+.detail-img2 {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+
+.detail-title {
+  text-align: center;
+}
+
+
+.game-input {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.highscore {
+  text-align: center;
+}
+
+.game-container {
+  display: flex;
+}
+
+.text-container {
+  margin-left: 20px;
+}
+
+.game-text {
+  margin-top: 10px;
+}
+
+.score-container {
+  border: thin solid black;
+  margin-bottom: 10px;
+}
+
+.score-text {
+  margin: 20px;
+
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scores-border {
+  border: thin solid #707070;
+  padding: 1.5rem 1.5rem;
+}
+
+.search-container {
+  border: thin solid black;
+  margin: 10px;
+}
+
+.search-text {
+  text-align: center;
+}
+
+.gametext-container {
+  margin-left: 20px;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.button {
+  background-color: Crimson;  
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.button:focus,
+.button:hover {
+  background-color: FireBrick;
+  color: White;
+}
